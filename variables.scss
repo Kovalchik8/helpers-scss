@@ -1,0 +1,48 @@
+/* defatul <html> font size */
+/* edit it if you really know what you are doing */
+$font-root: 16;
+
+/* mobile first design principle */
+$mobile-first: false;
+
+/* maximum grid columns in a row */
+$max-columns: 12;
+
+/* responsive classes tiles depends on breakpoints; from highest to lowest */
+$grid-breakpoints: (
+  'xxl': 1399.98px,
+  'xl': 1199.98px,
+  'lg': 991.98px,
+  'md': 767.98px,
+  'sm': 575.98px,
+);
+
+/* container max widths depends on breakpoints; from lowest to highest */
+$container-max-widths: (
+  'sm': 540px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1140px,
+  'xxl': 1320px,
+);
+
+/* numeric variables */
+$padding-margin-max: 120;
+$padding-margin-step: 5;
+$font-size-max: 54;
+$width-height-max: 950;
+$width-height-step: 5;
+$border-radius-max: 24;
+$border-width-max: 5;
+$transition-max: 4;
+$z-index-max: 10;
+
+/* colors */
+$colors: (
+  'white': #fff,
+  'red': #cc1920,
+  'red-darken': darken(#cc1920, 5%),
+  'gray': #737373,
+  'gray-text': #a3a8bb,
+  'tr': transparent,
+);

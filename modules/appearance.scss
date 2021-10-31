@@ -1,0 +1,109 @@
+@use 'sass:math';
+@import './../variables.scss';
+
+@mixin appearance($breakpoint-name-with-dash) {
+  /* visibility */
+  .vi {
+    &-hi#{$breakpoint-name-with-dash} {
+      visibility: hidden;
+    }
+  }
+
+  /* transition */
+  .tr {
+    $i: 0;
+    @while $i <= $transition-max {
+      &-#{$i * 10}#{$breakpoint-name-with-dash} {
+        transition: #{$i}s;
+      }
+      $i: $i + 0.1;
+    }
+  }
+
+  /* opacity */
+  .op {
+    $i: 0;
+    $k: 0;
+    @while $i <= 1 {
+      &-#{$k}#{$breakpoint-name-with-dash} {
+        opacity: #{$i};
+      }
+      $i: $i + 0.1;
+      $k: $k + 1;
+    }
+  }
+
+  /* overflow */
+  .ov {
+    &-hi#{$breakpoint-name-with-dash} {
+      overflow: hidden;
+    }
+    &-au#{$breakpoint-name-with-dash} {
+      overflow: auto;
+    }
+    &-y {
+      &-hi#{$breakpoint-name-with-dash} {
+        overflow-y: hidden;
+      }
+      &-au#{$breakpoint-name-with-dash} {
+        overflow-y: auto;
+      }
+    }
+    &-x {
+      &-hi#{$breakpoint-name-with-dash} {
+        overflow-x: hidden;
+      }
+      &-au#{$breakpoint-name-with-dash} {
+        overflow-x: auto;
+      }
+    }
+  }
+
+  /* cursor */
+  .cu {
+    &-po#{$breakpoint-name-with-dash} {
+      cursor: pointer;
+    }
+    &-de#{$breakpoint-name-with-dash} {
+      cursor: default;
+    }
+    &-zo-in {
+      cursor: zoom-in;
+    }
+  }
+
+  /* resize */
+  .re {
+    &-no#{$breakpoint-name-with-dash} {
+      resize: none;
+    }
+    &-ve#{$breakpoint-name-with-dash} {
+      resize: vertical;
+    }
+  }
+
+  /* list style */
+  .li {
+    &-st {
+      &-no#{$breakpoint-name-with-dash} {
+        list-style: none;
+      }
+    }
+  }
+
+  /* columns gaps */
+  .gaps {
+    $i: 0;
+    @while $i <= 80 {
+      &-#{$i}#{$breakpoint-name-with-dash} {
+        margin-left: -#{$i}px;
+        margin-right: -#{$i}px;
+        & > * {
+          padding-left: #{$i}px;
+          padding-right: #{$i}px;
+        }
+      }
+      $i: $i + 5;
+    }
+  }
+}

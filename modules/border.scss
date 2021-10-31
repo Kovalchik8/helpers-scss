@@ -1,0 +1,57 @@
+@import './../variables.scss';
+
+$border-radius: (
+  'initial-value': 0,
+  'max-value': $border-radius-max,
+  'step': 1,
+  'properties-group': (
+    '.bo-ra': 'border-radius',
+    '.bo-to-le-ra': 'border-top-left-radius',
+    '.bo-to-ri-ra': 'border-top-right-radius',
+    '.bo-bo-ri-ra': 'border-bottom-right-radius',
+    '.bo-bo-le-ra': 'border-bottom-left-radius',
+  ),
+);
+
+$border-width: (
+  'initial-value': 0,
+  'max-value': $border-width-max,
+  'step': 1,
+  'properties-group': (
+    '.bo-wi': 'border-width',
+    '.bo-to-wi': 'border-top-width',
+    '.bo-ri-wi': 'border-right-width',
+    '.bo-bo-wi': 'border-bottom-width',
+    '.bo-le-wi': 'border-left-width',
+  ),
+);
+
+@mixin border($breakpoint-name-with-dash) {
+  .bo {
+    &-no#{$breakpoint-name-with-dash} {
+      border: none;
+    }
+    /* border radius */
+    &-ra {
+      &-circle#{$breakpoint-name-with-dash} {
+        border-radius: 50%;
+      }
+    }
+    /* border style */
+    &-st-so#{$breakpoint-name-with-dash} {
+      border-style: solid;
+    }
+    &-to-st-so#{$breakpoint-name-with-dash} {
+      border-top-style: solid;
+    }
+    &-ri-st-so#{$breakpoint-name-with-dash} {
+      border-right-style: solid;
+    }
+    &-bo-st-so#{$breakpoint-name-with-dash} {
+      border-bottom-style: solid;
+    }
+    &-le-st-so#{$breakpoint-name-with-dash} {
+      border-left-style: solid;
+    }
+  }
+}
