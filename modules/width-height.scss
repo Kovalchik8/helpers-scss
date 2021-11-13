@@ -19,6 +19,7 @@ $width-height: (
   ),
 );
 
+
 @mixin width-height($breakpoint-name-with-dash) {
   .h-100#{$breakpoint-name-with-dash} {
     height: 100%;
@@ -26,4 +27,18 @@ $width-height: (
   .w-100#{$breakpoint-name-with-dash} {
     width: 100%;
   }
+  .mw-100#{$breakpoint-name-with-dash} {
+    max-width: 100%;
+  }
+  .mh-100#{$breakpoint-name-with-dash} {
+    max-height: 100%;
+  }
+  .ma-wi-no#{$breakpoint-name-with-dash} {
+    max-width: none;
+  }
+  .ma-he-no#{$breakpoint-name-with-dash} {
+    max-height: none;
+  }
 }
+
+

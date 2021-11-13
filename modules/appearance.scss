@@ -88,6 +88,9 @@
       &-no#{$breakpoint-name-with-dash} {
         list-style: none;
       }
+	  &-di#{$breakpoint-name-with-dash} {
+        list-style: disc;
+      }
     }
   }
 
