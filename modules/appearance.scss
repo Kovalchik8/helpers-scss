@@ -48,6 +48,9 @@
       &-au#{$breakpoint-name-with-dash} {
         overflow-y: auto;
       }
+      &-sc#{$breakpoint-name-with-dash} {
+        overflow-y: scroll;
+      }
     }
     &-x {
       &-hi#{$breakpoint-name-with-dash} {
@@ -55,6 +58,9 @@
       }
       &-au#{$breakpoint-name-with-dash} {
         overflow-x: auto;
+      }
+      &-sc#{$breakpoint-name-with-dash} {
+        overflow-x: scroll;
       }
     }
   }
@@ -88,7 +94,7 @@
       &-no#{$breakpoint-name-with-dash} {
         list-style: none;
       }
-	  &-di#{$breakpoint-name-with-dash} {
+      &-di#{$breakpoint-name-with-dash} {
         list-style: disc;
       }
     }

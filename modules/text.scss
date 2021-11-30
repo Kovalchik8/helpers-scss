@@ -35,6 +35,9 @@ $font-weight: (
     &-no#{$breakpoint-name-with-dash} {
       text-decoration: none;
     }
+    &-li-th#{$breakpoint-name-with-dash} {
+      text-decoration: line-through;
+    }
   }
 
   /* text align */
