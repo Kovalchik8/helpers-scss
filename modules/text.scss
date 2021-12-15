@@ -68,8 +68,8 @@ $font-weight: (
 
   /* letter spacing */
   .le-sp {
-    $i: 0;
-    $k: 0;
+    $i: -2;
+    $k: -20;
     @while $i <= 3 {
       &-#{$k}#{$breakpoint-name-with-dash} {
         @if ($no-breakpoint) {
