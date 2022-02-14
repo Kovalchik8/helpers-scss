@@ -19,7 +19,7 @@
     @while $i <= $max_val {
       #{$class}-#{$i}#{$breakpoint-name-with-dash} {
         @each $property in $properties {
-          @if ($no-breakpoint) {
+          @if ($no-breakpoint and $use-rem-unit) {
             #{$property}: #{if($no_units, $i, #{math.div($i, $font-root)}rem)};
           } @else {
             #{$property}: #{$i}#{if($no_units, '', 'px')};

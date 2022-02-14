@@ -8,6 +8,9 @@ $mobile-first: false;
 /* maximum grid columns in a row */
 $max-columns: 12;
 
+/* use rem units within numeric classes without breakpoints tile */
+$use-rem-unit: true;
+
 /* responsive classes tiles depends on breakpoints; from highest to lowest */
 $grid-breakpoints: (
   'xxl': 1399.98px,

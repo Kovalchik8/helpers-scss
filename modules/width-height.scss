@@ -36,6 +36,9 @@ $width-height: (
   .ma-wi-no#{$breakpoint-name-with-dash} {
     max-width: none;
   }
+  .mi-wi-au#{$breakpoint-name-with-dash} {
+	min-width: auto;
+  }
   .ma-he-no#{$breakpoint-name-with-dash} {
     max-height: none;
   }

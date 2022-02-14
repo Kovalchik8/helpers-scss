@@ -3,3 +3,4 @@ output
 package.json
 index.html
 gulpfile.js
+package-lock.json

@@ -88,6 +88,9 @@ $font-weight: (
     &-no-wr#{$breakpoint-name-with-dash} {
       white-space: nowrap;
     }
+	&-no#{$breakpoint-name-with-dash} {
+      white-space: normal;
+    }
   }
 
   /* word-break */

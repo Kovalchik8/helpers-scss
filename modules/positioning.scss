@@ -123,4 +123,25 @@
       }
     }
   }
+  
+    /* object */
+  .ob {
+    &-po {
+      &-ri#{$breakpoint-name-with-dash} {
+        object-position: right;
+      }
+      &-le#{$breakpoint-name-with-dash} {
+        object-position: left;
+      }
+      &-ce#{$breakpoint-name-with-dash} {
+        object-position: center;
+      }
+      &-to#{$breakpoint-name-with-dash} {
+        object-position: top;
+      }
+      &-bo#{$breakpoint-name-with-dash} {
+        object-position: bottom;
+      }
+    }
+  }
 }
