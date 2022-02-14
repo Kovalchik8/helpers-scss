@@ -26,6 +26,13 @@
           }
         }
       }
+      @if ($use-rem-unit) {
+        #{$class}-#{$i}#{$breakpoint-name-with-dash}_ {
+          @each $property in $properties {
+            #{$property}: #{$i}#{if($no_units, '', 'px')};
+          }
+        }
+      }
       $i: $i + $step;
     }
 
