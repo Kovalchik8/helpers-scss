@@ -88,15 +88,29 @@ $font-weight: (
     &-no-wr#{$breakpoint-name-with-dash} {
       white-space: nowrap;
     }
-	&-no#{$breakpoint-name-with-dash} {
+    &-no#{$breakpoint-name-with-dash} {
       white-space: normal;
     }
   }
 
   /* word-break */
-  .wo-br#{$breakpoint-name-with-dash} {
-    &-br-al {
+  .wo-br {
+    &-br-al#{$breakpoint-name-with-dash} {
       word-break: break-all;
+    }
+  }
+
+  /* text overflow */
+  .te-ov {
+    &-el#{$breakpoint-name-with-dash} {
+      text-overflow: ellipsis;
+    }
+  }
+
+  /* links */
+  .links {
+    &-un#{$breakpoint-name-with-dash} a {
+      text-decoration: underline;
     }
   }
 }

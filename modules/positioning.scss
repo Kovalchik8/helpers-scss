@@ -142,6 +142,9 @@
       &-bo#{$breakpoint-name-with-dash} {
         object-position: bottom;
       }
+	  &-bo-ri#{$breakpoint-name-with-dash} {
+        object-position: bottom right;
+      }
     }
   }
 }

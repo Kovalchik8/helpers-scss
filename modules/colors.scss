@@ -22,5 +22,8 @@ $colors-properties-group: (
         }
       }
     }
+    .links-#{$color-name}#{$breakpoint-name-with-dash} a {
+      color: $color-hex;
+    }
   }
 }
