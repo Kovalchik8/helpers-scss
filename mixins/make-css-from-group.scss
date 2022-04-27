@@ -26,7 +26,7 @@
           }
         }
       }
-      @if ($use-rem-unit) {
+      @if ($use-rem-unit and $no-breakpoint) {
         #{$class}-#{$i}#{$breakpoint-name-with-dash}_ {
           @each $property in $properties {
             #{$property}: #{$i}#{if($no_units, '', 'px')};
